@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meal Form</Form>
-  </title>
-
+  <title>Meal Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -23,8 +22,29 @@
         <input name="email" id="email" type="email" placeholder="Enter your email" required>
       </label>
       <label for="number" id="number-label">Rate the meal 1-10
-        <input name="rating" id="number" type="number" min="1" max="10" placeholder="10"  required>
+        <input name="rating" id="number" type="number" min="1" max="10" placeholder="10" required>
       </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown" id="dropdown-label">Did you enjoy the food?
+        <select name="satisfaction" id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <p>Was the meal served hot or cold?</p>
+        <label for="hot-food" id="hot-label"><input name="temp" value="hot" id="hot-food" type="radio" checked>Hot</label>
+        <label for="cold-food" id="cold-label"><input name="temp" value="cold" id="cold-food" type="radio">Cold</label>
+      <p>What are some words you would use to describe the meal?</p>
+        <label for="flavorful" id="flavorful-label"><input name="flavorful" id="flavorful" value="1" type="checkbox">Flavorful</label>
+        <label for="spicy" id="spicy-label"><input name="spicy" id="spicy" value="2" type="checkbox">Spicy</label>
+        <label for="funky" id="funky-label"><input name="funky" id="funky" value="3" type="checkbox">Funky</label>
+        <label for="savory" id="savory-label"><input name="savory" id="savory" value="4" type="checkbox">Flavorful</label>
+    </fieldset>
+    <fieldset>
+      <legend>Anything extra you would like me to know?</legend>
+      <label for="additional-comments"><textarea name="additional-comments" id="additional-comments" cols="50" rows="6"></textarea></label>
+      <input type="submit" id="submit" value="Submit">
     </fieldset>
   </form>
 </body>
