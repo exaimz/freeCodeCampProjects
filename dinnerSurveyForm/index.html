@@ -1,62 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meal Form</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div>
-    <h1 id="title">Meal Review</h1>
-    <p id="description">An app for a quick way to review the meal I prepared.</p>
-  </div>
-  <form id="survey-form">
-    <fieldset>
-      <div class="first-block">
-        <label for="name" id="name-label">Meal
-          <input name="meal" id="name" type="text" placeholder="What meal did I make?" required>
+  <body>
+    <div>
+      <h1 id="title">Meal Review</h1>
+      <p id="description">
+        An app for a quick way to review the meal I prepared.
+      </p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <div class="first-block">
+          <label for="name" id="name-label"
+            >Meal
+            <input
+              name="meal"
+              id="name"
+              type="text"
+              placeholder="What meal did I make?"
+              required
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label for="dropdown" id="dropdown-label"
+            >Did you enjoy the food?
+            <select name="satisfaction" id="dropdown">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <label for="number" id="number-label"
+            >Rate the meal:
+            <input
+              name="rating"
+              id="number"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="10"
+              required
+            />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p>Was the meal served hot or cold?</p>
+        <label for="hot-food" id="hot-label" class="inline"
+          ><input
+            name="temp"
+            value="hot"
+            id="hot-food"
+            type="radio"
+            checked
+          />Hot</label
+        >
+        <label for="cold-food" id="cold-label" class="inline"
+          ><input
+            name="temp"
+            value="cold"
+            id="cold-food"
+            type="radio"
+          />Cold</label
+        >
+        <p>What are some words you would use to describe the meal?</p>
+        <label for="flavorful" id="flavorful-label" class="inline"
+          ><input
+            name="flavorful"
+            id="flavorful"
+            value="1"
+            type="checkbox"
+          />Flavorful</label
+        >
+        <label for="spicy" id="spicy-label" class="inline"
+          ><input
+            name="spicy"
+            id="spicy"
+            value="2"
+            type="checkbox"
+          />Spicy</label
+        >
+        <label for="funky" id="funky-label" class="inline"
+          ><input
+            name="funky"
+            id="funky"
+            value="3"
+            type="checkbox"
+          />Funky</label
+        >
+        <label for="savory" id="savory-label" class="inline"
+          ><input
+            name="savory"
+            id="savory"
+            value="4"
+            type="checkbox"
+          />Flavorful</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="additional-comments">
+          <p>Anything extra you would like me to know?</p>
+          <textarea
+            name="additional-comments"
+            id="additional-comments"
+            cols="50"
+            rows="6"
+          ></textarea>
         </label>
-        <label for="email" id="email-label">Email
-          <input name="email" id="email" type="email" placeholder="Enter your email" required>
-        </label>
-        <label for="dropdown" id="dropdown-label">Did you enjoy the food?
-          <select name="satisfaction" id="dropdown">
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-        </label>
-        <label for="number" id="number-label">Rate the meal:
-          <input name="rating" id="number" type="number" min="1" max="10" placeholder="10" required>
-        </label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <p>Was the meal served hot or cold?</p>
-      <label for="hot-food" id="hot-label" class="inline"><input name="temp" value="hot" id="hot-food" type="radio"
-          checked>Hot</label>
-      <label for="cold-food" id="cold-label" class="inline"><input name="temp" value="cold" id="cold-food"
-          type="radio">Cold</label>
-      <p>What are some words you would use to describe the meal?</p>
-      <label for="flavorful" id="flavorful-label" class="inline"><input name="flavorful" id="flavorful" value="1"
-          type="checkbox">Flavorful</label>
-      <label for="spicy" id="spicy-label" class="inline"><input name="spicy" id="spicy" value="2"
-          type="checkbox">Spicy</label>
-      <label for="funky" id="funky-label" class="inline"><input name="funky" id="funky" value="3"
-          type="checkbox">Funky</label>
-      <label for="savory" id="savory-label" class="inline"><input name="savory" id="savory" value="4"
-          type="checkbox">Flavorful</label>
-    </fieldset>
-    <fieldset>
-      <label for="additional-comments">
-        <p>Anything extra you would like me to know?</p>
-        <textarea name="additional-comments" id="additional-comments" cols="50" rows="6"></textarea>
-      </label>
-      <input type="submit" id="submit" value="Submit">
-    </fieldset>
-  </form>
-</body>
-
+        <input type="submit" id="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
 </html>
