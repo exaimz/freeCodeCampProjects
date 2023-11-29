@@ -60,6 +60,7 @@ textarea {
   max-width: 335px;
   max-height: 100px;
   margin-top: 0.5rem;
+  color: rgb(66, 65, 65);
 }
 
 #submit {
@@ -70,6 +71,8 @@ textarea {
 
 .inline {
   display: inline-block;
+  accent-color: rgba(3, 80, 80, 40%);
+
 }
 
 .first-block {
