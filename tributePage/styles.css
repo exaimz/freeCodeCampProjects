@@ -1,3 +1,32 @@
-p {
-    font-size: 2rem;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* background-color: rgb(161, 165, 165); */
+    background-color: rgba(225, 128, 255, 0.144);
+}
+
+#main {
+    width: 90%;
+    margin: 1em auto;
+    background-color: rgb(233, 238, 238);
+    text-align: center;
+    font-family: Tahoma;
+}
+
+#title {
+    font-size: 3rem;
+    padding: 1.3rem 0;
+    color: rgba(209, 102, 241, 0.534);
+}
+
+#img-div {
+    background-color: white;
+}
+
+#image {
+    width: 70%;
+    padding: 1em 0;
 }
