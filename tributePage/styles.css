@@ -1,38 +1,40 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    /* background-color: rgb(161, 165, 165); */
-    background-color: rgba(225, 128, 255, 0.144);
+  background-color: rgba(225, 128, 255, 0.144);
 }
 
 #main {
-    width: 90%;
-    margin: 1em auto;
-    background-color: rgb(233, 238, 238);
-    text-align: center;
-    font-family: Tahoma;
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+  font-family: Tahoma;
+  background-color: white;
+  border-radius: 1em;
 }
 
 #title {
-    font-size: 3rem;
-    padding: 1.3rem 0;
-    color: rgba(209, 102, 241, 0.534);
+  font-size: 3rem;
+  padding: 1.3rem 0;
+  color: rgba(209, 102, 241, 0.534);
 }
 
 #img-div {
-    background-color: white;
-    padding: 3em 0;
+  padding-top: 3em;
+  background-color: rgba(136, 136, 136, 0.096);
+  margin: 0 2em;
+  border-radius: 1em;
 }
 
 #image {
-    width: 75%;
+  width: 75%;
+  border-radius: .75em;
 }
 
-figcaption { 
- color: rgba(0, 0, 0, 0.466);
- padding: .5rem;
- font-size: larger;
+figcaption {
+  color: rgba(0, 0, 0, 0.466);
+  padding: .5rem 0;
 }
