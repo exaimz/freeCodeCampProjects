@@ -24,9 +24,15 @@ html {
 
 #img-div {
     background-color: white;
+    padding: 3em 0;
 }
 
 #image {
-    width: 70%;
-    padding: 1em 0;
+    width: 75%;
+}
+
+figcaption { 
+ color: rgba(0, 0, 0, 0.466);
+ padding: .5rem;
+ font-size: larger;
 }
