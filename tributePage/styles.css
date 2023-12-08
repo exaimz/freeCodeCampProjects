@@ -39,3 +39,32 @@ figcaption {
   color: rgba(0, 0, 0, 0.466);
   padding: .5rem 0;
 }
+
+ul > li {
+list-style-type: none;
+padding-bottom: 1em;
+}
+
+#tribute-info {
+  margin-top: 1em;
+  padding: 1em 5em;
+}
+
+#promo {
+  background-color: rgba(225, 128, 255, 0.842);
+  border: 1px solid rgba(225, 128, 255, 0.842);
+  width: 30%;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 3em;
+  color: white;
+  box-shadow: 10px 8px 5px rgba(225, 128, 255, 0.541);
+  margin-bottom: 2em;
+  font-size: larger;
+}
+
+#promo:hover {
+  background-color: rgba(205, 74, 245, 0.842);
+  border: 1px solid rgba(205, 74, 245, 0.842);
+  cursor: pointer;
+}
