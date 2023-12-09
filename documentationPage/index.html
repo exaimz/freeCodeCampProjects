@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal CSS Knowledge Vault</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <nav id="navbar">
-        <header></header>
+      <header>CSS Knowledge Vault</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#selectors">Selectors</a></li>
+        <li><a class="nav-link" href="#display">Display</a></li>
+        <li><a class="nav-link" href="#position">Position</a></li>
+        <li><a class="nav-link" href="#float">Float</a></li>
+      </ul>
     </nav>
     <main id="main-doc">
-        <section id="" class="main-section">
-            <header></header>
-        </section>
-        <section id="" class="main-section">
-            <header></header>
-        </section>
-        <section id="" class="main-section">
-            <header></header>
-        </section>
-        <section id="" class="main-section">
-            <header></header>
-        </section>
-        <section id="" class="main-section">
-            <header></header>
-        </section>
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>CSS stands for Cascading Style Sheets, and it's a language used in web development to control the presentation and layout of HTML documents. Imagine HTML as the skeleton of a webpage, providing the structure and content, while CSS is the skin that adds style, color, layout, and design to make it visually appealing.</p>
+        <p>CSS follows a hierarchy where styles can cascade, meaning rules can override each other based on their specificity. Inline styles (styles directly applied to an HTML element) have the highest priority, followed by IDs, classes, and then tag selectors. Specificity refers to how the browser decides which styles to apply when multiple rules conflict.</p>
+        <p>CSS allows you to create responsive websites that adapt to different screen sizes (like on mobile phones, tablets, or desktops) using techniques such as media queries, flexible layouts, and viewport settings.</p>
+        <p>To start using CSS, you first need to link the HTML file to your external CSS file using the snippet below.</p>
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+      </section>
+      <section id="selectors" class="main-section">
+        <header>Selectors</header>
+      </section>
+      <section id="display" class="main-section">
+        <header>Display</header>
+      </section>
+      <section id="position" class="main-section">
+        <header>Position</header>
+      </section>
+      <section id="float" class="main-section">
+        <header>Float</header>
+      </section>
     </main>
-</body>
+  </body>
 </html>
