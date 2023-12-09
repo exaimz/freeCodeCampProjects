@@ -53,7 +53,7 @@ padding-bottom: 1em;
 #promo {
   background-color: rgba(225, 128, 255, 0.842);
   border: 1px solid rgba(225, 128, 255, 0.842);
-  width: 30%;
+  min-width: 25%;
   margin: 0 auto;
   padding: 1em;
   border-radius: 3em;
