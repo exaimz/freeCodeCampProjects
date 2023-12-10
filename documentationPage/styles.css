@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  line-height: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(247, 245, 245);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin-left: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+code {
+  display: inline-block;
+  background-color: rgb(245, 245, 226);
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-bottom: 5px;
+  font-family: monospace;
+}
+
+.example {
+  display: block;
+  margin: 1em 5em;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+#navbar {
+  border-right: 2px solid lightgray;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 23%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+#navbar ul {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+#nav-link-list {
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#nav-link-list > a > li {
+  padding: 10px 0;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+#nav-link-list li:hover {
+  background-color: rgba(107, 193, 221, 0.384);
+  border-right: 5px solid red;
+}
+
+#main-doc {
+  margin: 0 5% 0 25%;
+  position: absolute;
+  font-size: 1.1rem;
+}
+
+section {
+  background-color: rgba(107, 193, 221, 0.384);
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 25px;
+}

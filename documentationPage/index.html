@@ -8,35 +8,191 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>CSS Knowledge Vault</header>
-      <ul>
-        <li><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#selectors">Selectors</a></li>
-        <li><a class="nav-link" href="#display">Display</a></li>
-        <li><a class="nav-link" href="#position">Position</a></li>
-        <li><a class="nav-link" href="#float">Float</a></li>
+      <header><h1>CSS Knowledge Vault</h1></header>
+      <ul id="nav-link-list">
+        <a class="nav-link" href="#introduction"><li>Introduction</li></a>
+        <a class="nav-link" href="#selectors"><li>Selectors</li></a>
+        <a class="nav-link" href="#display"><li>Display</li></a>
+        <a class="nav-link" href="#position"><li>Position</li></a>
+        <a class="nav-link" href="#float"><li>Float</li></a>
       </ul>
     </nav>
     <main id="main-doc">
       <section id="introduction" class="main-section">
-        <header>Introduction</header>
-        <p>CSS stands for Cascading Style Sheets, and it's a language used in web development to control the presentation and layout of HTML documents. Imagine HTML as the skeleton of a webpage, providing the structure and content, while CSS is the skin that adds style, color, layout, and design to make it visually appealing.</p>
-        <p>CSS follows a hierarchy where styles can cascade, meaning rules can override each other based on their specificity. Inline styles (styles directly applied to an HTML element) have the highest priority, followed by IDs, classes, and then tag selectors. Specificity refers to how the browser decides which styles to apply when multiple rules conflict.</p>
-        <p>CSS allows you to create responsive websites that adapt to different screen sizes (like on mobile phones, tablets, or desktops) using techniques such as media queries, flexible layouts, and viewport settings.</p>
-        <p>To start using CSS, you first need to link the HTML file to your external CSS file using the snippet below.</p>
-        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+        <header><h1>Introduction</h1></header>
+        <article>
+          <p>
+            CSS stands for Cascading Style Sheets, and it's a language used in
+            web development to control the presentation and layout of HTML
+            documents. Imagine HTML as the skeleton of a webpage, providing the
+            structure and content, while CSS is the skin that adds style, color,
+            layout, and design to make it visually appealing.
+          </p>
+          <p>
+            CSS follows a hierarchy where styles can cascade, meaning rules can
+            override each other based on their specificity. Inline styles
+            (styles directly applied to an HTML element) have the highest
+            priority, followed by IDs, classes, and then tag selectors.
+            Specificity refers to how the browser decides which styles to apply
+            when multiple rules conflict.
+          </p>
+          <p>
+            CSS allows you to create responsive websites that adapt to different
+            screen sizes (like on mobile phones, tablets, or desktops) using
+            techniques such as media queries, flexible layouts, and viewport
+            settings.
+          </p>
+          <p>
+            To start using CSS, you first need to link the HTML file to your
+            external CSS file using the snippet below.
+            <code class="example"
+              >&lt;link rel="stylesheet" href="styles.css"&gt;</code
+            >
+          </p>
+        </article>
       </section>
       <section id="selectors" class="main-section">
-        <header>Selectors</header>
+        <header><h1>Selectors</h1></header>
+        <article>
+          <h2>Types of Selectors</h2>
+          <div class="selector_list">
+            <h3>Universal Selectors</h3>
+            <p>
+              The universal selector (*) selects all HTML elements on the page.
+              <code class="example"
+                >* { text-align: center; color: blue; }</code
+              >
+            </p>
+            <h3>Type Selectors</h3>
+            <p>
+              A type selector (or element selector) will select all elements of
+              the given element type, the syntax is just the name of the
+              element.
+              <code class="example">div { color: white; }</code>
+            </p>
+            <h3>ID Selectors</h3>
+            <p>
+              ID selectors are similar to class selectors, except they can only
+              be used by ONE element.
+              <code class="example">#title { background-color: red; }</code>
+            </p>
+            <h3>Grouping Selector</h3>
+            <p>
+              Two groups of elements that share some of the same style
+              declarations can be stacked together using a comma-separated list
+              to cut down on time, space, and repetition.
+              <code class="example"
+                >.read, .unread { color: white; background-color: black; }</code
+              >
+            </p>
+          </div>
+        </article>
       </section>
       <section id="display" class="main-section">
-        <header>Display</header>
+        <header><h1>Display</h1></header>
+        <p>
+          The display property specifies the display behavior (the type of
+          rendering box) of an element.
+        </p>
+        <h2>Common Display Values</h2>
+        <ul>
+          <li><code>display: none;</code></li>
+          <p>
+            This is commonly used with JavaScript to hide and show elements
+            without deleting and recreating them. <br />
+            The default display value for most elements is block or inline.
+          </p>
+          <li><code>display: inline;</code></li>
+          <p>
+            An inline element does not start on a new line and only takes up as
+            much width as necessary.
+          </p>
+          <li><code>display: block;</code></li>
+          <p>
+            A block-level element always starts on a new line and takes up the
+            full width available (stretches out to the left and right as far as
+            it can).
+          </p>
+          <li><code>display: inline-block;</code></li>
+          <li><code>display: flex;</code></li>
+        </ul>
+        <p>
+          These values provide flexibility in creating various layouts and
+          controlling how elements are presented on a webpage. The choice of
+          display value significantly affects the behavior and positioning of
+          elements in the document flow.
+        </p>
       </section>
       <section id="position" class="main-section">
-        <header>Position</header>
+        <header><h1>Position</h1></header>
+        <p>
+          The position property specifies the type of positioning method used
+          for an element.
+        </p>
+        <ul>
+          <li><code>static</code></li>
+          <p>
+            HTML elements are positioned static by default. <br />
+
+            Static positioned elements are not affected by the top, bottom,
+            left, and right properties. <br />
+
+            An element with position: static; is not positioned in any special
+            way; it is always positioned according to the normal flow of the
+            page
+          </p>
+          <li><code>relative</code></li>
+          <p>
+            An element with position: relative; is positioned relative to its
+            normal position. <br />
+
+            Setting the top, right, bottom, and left properties of a
+            relatively-positioned element will cause it to be adjusted away from
+            its normal position.
+          </p>
+          <li><code>fixed</code></li>
+          <p>
+            An element with position: fixed; is positioned relative to the
+            viewport, which means it always stays in the same place even if the
+            page is scrolled. The top, right, bottom, and left properties are
+            used to position the element. <br />
+
+            A fixed element does not leave a gap in the page where it would
+            normally have been located.
+          </p>
+          <li><code>absolute</code></li>
+          <p>
+            An element with position: absolute; is positioned relative to the
+            nearest positioned ancestor (instead of positioned relative to the
+            viewport, like fixed). <br />
+
+            However; if an absolute positioned element has no positioned
+            ancestors, it uses the document body, and moves along with page
+            scrolling.
+          </p>
+          <li><code>sticky</code></li>
+          <p>
+            An element with position: sticky; is positioned based on the user's
+            scroll position. <br />
+
+            A sticky element toggles between relative and fixed, depending on
+            the scroll position. It is positioned relative until a given offset
+            position is met in the viewport - then it "sticks" in place (like
+            position:fixed).
+          </p>
+        </ul>
       </section>
       <section id="float" class="main-section">
-        <header>Float</header>
+        <header><h1>Float</h1></header>
+        <p>The float proprty is used for positioning and formatting content.</p>
+        <ul>
+          <li>
+            <code>left</code> - The element floats to the left of its container
+          </li>
+          <li><code>right</code></li>
+          <li><code>none</code></li>
+          <li><code>inherit</code></li>
+        </ul>
       </section>
     </main>
   </body>
