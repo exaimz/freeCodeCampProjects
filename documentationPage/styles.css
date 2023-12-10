@@ -12,10 +12,6 @@ h1 {
   font-size: 2em;
 }
 
-p {
-  margin-left: 2rem;
-}
-
 ul {
   padding-left: 0;
 }
@@ -75,6 +71,7 @@ ul > li {
 #nav-link-list li:hover {
   background-color: rgba(107, 193, 221, 0.384);
   border-right: 5px solid red;
+  font-weight: 600;
 }
 
 #main-doc {
@@ -89,3 +86,44 @@ section {
   margin: 2rem 0;
   border-radius: 25px;
 }
+ @media (max-width:950px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 120px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #nav-link-list li{
+    font-size: .8em;
+    display: inline;
+    padding: 1em;
+  }
+
+  #navbar h1 {
+    font-size: 1.5em;
+    margin: 1em auto .5em auto;
+  }
+  #nav-link-list > a > li {
+    padding: 1em 2em 1em 2em;
+  }
+
+  #nav-link-list > a > li:hover {
+    border-right: none;
+    border-bottom: 5px solid red;
+  }
+
+  #main-doc {
+    margin: 15% 10% 10% 10%;
+  }
+
+  .example {
+    margin: 1em 0em;
+  }
+ }
