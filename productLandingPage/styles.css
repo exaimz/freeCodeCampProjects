@@ -1,0 +1,185 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: rgb(248, 248, 211);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1.1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+  background-color: rgb(255, 255, 206);
+  position: fixed;
+  width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+.nav-link:hover {
+    background-color: rgb(236, 192, 78);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px gray;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+#sign-up {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#form-title {
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+input {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    color: rgb(255, 250, 250); 
+    border: none;
+}
+
+#submit {
+    border-radius: 2rem;
+    background-color: rgb(243, 184, 35);
+}
+
+#email {
+    width: 20%;
+    border-radius: 1rem;
+    background-color: rgba(238, 209, 136, 0.568);
+}
+
+#email::placeholder {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#health-benifits-list {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    padding: 1rem 5rem;
+    gap: 1rem;
+}
+
+#health-benifits-list li {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(238, 209, 136, 0.568);
+}
+
+.benifits-title {
+    padding-bottom: .2rem;
+}
+
+.benifit-description {
+    color: rgba(109, 110, 96, 0.925);
+}
+
+#video-area {
+    text-align: center;
+    padding: 2rem 5rem;
+    margin: 1rem 5rem;
+    margin-bottom: 0;
+    background-color: rgba(238, 209, 136, 0.568);
+    border-radius: 2rem;
+}
+
+.recipie {
+    padding: 0 5rem;
+    display: grid;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+
+#video {
+    border-radius: .5rem;
+}
+
+#pricing-area {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.pricing-box {
+    font-size: 1.2rem;
+    background-color: rgba(238, 209, 136, 0.568);
+    border-radius: 3rem;
+}
+
+.price-title {
+    padding: .5rem .5rem;
+    margin-top: 2rem;
+    margin: 2rem 3rem;
+    border-radius: 3rem;
+    background-color: rgb(240, 195, 83);
+
+}
+
+.price {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+
+.price-button {
+    margin: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    background-color: rgb(243, 184, 35);
+    border: none;
+    color: white;
+}
+
+.price-button:hover,
+#submit:hover {
+    background-color: rgb(236, 218, 116);
+    cursor: pointer;
+    box-shadow: 3px 3px gray;
+    color: rgb(43, 42, 42);
+}
+
+@media (min-width: 1120px) {
+    #video-area {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+    #pricing-area {
+        gap: 4rem; 
+    }
+}
