@@ -1,0 +1,59 @@
+:root {
+    --main-header: #495867;
+    --main-callout: #c18c5d;
+    --main-section: #ce796b;
+    --main-section2: #e7ad99;
+    --main-lettering: #ecc8af;    
+
+
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main-section);
+}
+
+#navbar ul {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: row;
+   position: fixed;
+   list-style-type: none;
+   background-color: var(--main-header);
+   top: 0;
+   right: 0;
+    width: 100%;
+   padding: 1rem 0;
+}
+
+#navbar li a {
+    padding: 0 2rem;
+    text-decoration: none;
+    color: var(--main-lettering);
+    font-size: 1.3rem;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+ background-color: var(--main-section2);   
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--main-lettering); 
+}
