@@ -1,11 +1,9 @@
 :root {
-    --main-header: #495867;
-    --main-callout: #c18c5d;
-    --main-section: #ce796b;
-    --main-section2: #e7ad99;
-    --main-lettering: #ecc8af;    
-
-
+  --main-header: #495867;
+  --main-callout: #c18c5d;
+  --main-section: #ce796b;
+  --main-section2: #e7ad99;
+  --main-lettering: #ecc8af;
 }
 
 *,
@@ -17,43 +15,74 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--main-section);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--main-section);
 }
 
 #navbar ul {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   flex-direction: row;
-   position: fixed;
-   list-style-type: none;
-   background-color: var(--main-header);
-   top: 0;
-   right: 0;
-    width: 100%;
-   padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  list-style-type: none;
+  background-color: var(--main-header);
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 #navbar li a {
-    padding: 0 2rem;
-    text-decoration: none;
-    color: var(--main-lettering);
-    font-size: 1.3rem;
+  padding: 0 2rem;
+  text-decoration: none;
+  color: var(--main-lettering);
+  font-size: 1.3rem;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#projects {
- background-color: var(--main-section2);   
+#welcome-section,
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    font-size: 5rem;
-    color: var(--main-lettering); 
+  font-size: 5rem;
+  color: var(--main-lettering);
+}
+
+#projects {
+  background-color: var(--main-section2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 0 2rem;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.project-example {
+    background-color: var(--main-callout);
+    border-radius: 1rem;
+}
+
+.project-title {
+    color: var(--main-lettering);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.thumbnail {
+  height: 350px;
+  width: 400px;
+  padding-bottom: 1rem;
 }
