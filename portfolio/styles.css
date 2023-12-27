@@ -1,6 +1,6 @@
 :root {
   --main-header: #495867;
-  --main-callout: #c18c5d;
+  --main-callout: #d3ab56;
   --main-section: #ce796b;
   --main-section2: #e7ad99;
   --main-lettering: #ecc8af;
@@ -55,7 +55,7 @@ h1 {
 
 #projects {
   background-color: var(--main-section2);
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +73,7 @@ h1 {
 .project-example {
     background-color: var(--main-callout);
     border-radius: 1rem;
+    box-shadow: 5px 5px 5px #b98d2d;
 }
 
 .project-title {
@@ -82,7 +83,42 @@ h1 {
 }
 
 .thumbnail {
-  height: 350px;
-  width: 400px;
+  width: 90%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#contact {
+  flex-direction: column;
+}
+
+#socials {
+  font-weight: 700;
+  display: flex;
+  list-style-type: none;
+  color: var(--main-lettering);
+}
+
+#socials-title {
   padding-bottom: 1rem;
+}
+
+#socials li {
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+#socials li:hover {
+  transform: translateY(5px);
+  color: var(--main-section2);
+}
+
+footer {
+  background-color: var(--main-header);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  color: var(--main-lettering);
 }
